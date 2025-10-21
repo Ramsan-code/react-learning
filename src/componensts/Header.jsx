@@ -25,6 +25,9 @@ function Header() {
         <Link to="/props" style={style.navLink}>
           Props
         </Link>
+        <Link to="/hooks" style={style.navLink}>
+          Hooks
+        </Link>
       </nav>
     </header>
   );

@@ -1,0 +1,68 @@
+/* ===== DefaultProps Component Styles ===== */
+
+.content-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.content-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Title Section */
+.content-title {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.content-title h1 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.content-title p {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Body Section */
+.content-body {
+    background-color: #f9fafb;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #edf2f7;
+}
+
+/* Key-Value Row */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-key {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 1rem;
+}
+
+.info-value {
+    color: #4a5568;
+    font-size: 1rem;
+}

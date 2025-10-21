@@ -14,12 +14,12 @@ function decrease() {
 }
 return (
   <div>
-    <h1>UseState</h1>
-    <button onClick={increase}>+</button>
+    <h1><b>UseState</b></h1>
+    <button onClick={increase}><b>+</b></button>
     <br />
     <br />
     <button>{count}</button><br /><br />
-    <button onClick={decrease}>-</button>
+    <button onClick={decrease}><b>-</b></button>
     <br />
   </div>
 );

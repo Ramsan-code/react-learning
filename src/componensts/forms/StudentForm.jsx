@@ -2,35 +2,49 @@ import React, { useState } from "react";
 import "../../styles/Form.css";
 
 function StudentForm() {
-const [formData,setFormData] = useState({
-    name:"",
-    age:"",
-    isActive : true ,
-});
+    const defaultValues={
+    name: "",
+    age: "",
+    isActive: true,
+    }
+
+  const [formData, setFormData] = useState(defaultValues);
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    
+    alert("user create sucessfully");
+    setFormData(defaultValues);
   };
-  
+
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label for="fname">First name:</label>
+        <label for="name"> name:</label>
         <br />
         <input
           type="text"
-          id="fname"
-          name="fname"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
         />
         <br />
-        <label for="lname">Last name:</label>
+        <label for="age">Age</label>
         <br />
         <input
-          type="text"
-          id="lname"
-          name="lname"
+          type="number"
+          id="age"
+          name="age"
+          value={formData.age}
+          onChange={handleChange}
         />
         <br />
         <br />

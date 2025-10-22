@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import "../../styles/Form.css";
 
 function StudentForm() {
-  const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
+const [formData,setFormData] = useState({
+    name:"",
+    age:"",
+    isActive : true ,
+});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`First Name:${fname}`);
-    console.log(`Last Name:${lname}`);
+    console.log(formData);
+    
   };
   
   return (
@@ -20,7 +23,6 @@ function StudentForm() {
           type="text"
           id="fname"
           name="fname"
-          onChange={(e) => setFname(e.target.value)}
         />
         <br />
         <label for="lname">Last name:</label>
@@ -29,7 +31,6 @@ function StudentForm() {
           type="text"
           id="lname"
           name="lname"
-          onChange={(e) => setLname(e.target.value)}
         />
         <br />
         <br />

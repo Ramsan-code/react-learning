@@ -5,7 +5,7 @@ import UseEffect from "../componensts/hooks/UseEffect";
 function Hooks() {
   return (
     <div>
-      <UseState />
+      {/* <UseState /> */}
       <br />
       <hr />
       <br />

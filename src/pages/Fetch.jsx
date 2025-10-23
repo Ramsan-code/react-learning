@@ -1,25 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from 'react'
+import JsonPlaceholder from '../componensts/fetch/JsonPlaceholder'
+import LocalApi from '../componensts/fetch/LocalApi'
 
 function Fetch() {
-  const [users, setUsers] = useState([]);
-
-  useEffect(() => {
-    fetchUsers();
-  }, []);
-
-  const fetchUsers = async () => {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    const userdata = await response.json();
-    console.log(userdata);
-    setUsers(userdata);
-  };
   return (
-   <>
-   <div>
-    users.map((user.map))
-   </div>
-   </>
-  );
+
+<>
+{/* <JsonPlaceholder /> */}
+<LocalApi />
+</>
+)
 }
 
-export default Fetch;
+export default Fetch

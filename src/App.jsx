@@ -10,6 +10,7 @@ import JSX from "./pages/JSX";
 import NotFound from "./pages/NotFound";
 import Hooks from "./pages/Hooks";
 import Forms from "./pages/Forms";
+import Fetch from "./pages/Fetch";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
           <Route path="/props" element={<Props />} />
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/forms" element={<Forms />} />
+          <Route path="/fetch" element={<Fetch/>} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

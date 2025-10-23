@@ -28,9 +28,10 @@ function Header() {
         <Link to="/hooks" style={style.navLink}>
           Hooks
         </Link>
-         <Link to="/forms" style={style.navLink}>
+        <Link to="/forms" style={style.navLink}>
           Form
         </Link>
+        <Link to="/fetch" style={style.navLink}></Link>
       </nav>
     </header>
   );

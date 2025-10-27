@@ -16,8 +16,7 @@ function FetchData() {
       console.log(userData);
       setUsers(userData);
     } catch (error) {
-        console.log(error);
-        
+      console.log(error);
     }
   };
   return (
@@ -43,9 +42,14 @@ function FetchData() {
             <tr key={user._id}>
               <td>{user.name}</td>
               <td>{user.email}</td>
-              <td>{user.isActive}</td>
+              <td>{user.isActive ? "yes" : "No"}</td>
               <td>{user.createdAt}</td>
-              <td>{user.updatedAt}</td>
+              <td>{new Date(user.updatedAt).toLocaleString("en-Us", {
+               month:"2-digit",
+               year:"2-digit",
+               hour:"2-digit"
+                
+              })}</td>
             </tr>
           ))}
         </tbody>

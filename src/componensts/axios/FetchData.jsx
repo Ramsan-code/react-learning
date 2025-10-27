@@ -43,13 +43,24 @@ function FetchData() {
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.isActive ? "yes" : "No"}</td>
-              <td>{user.createdAt}</td>
-              <td>{new Date(user.updatedAt).toLocaleString("en-Us", {
-               month:"2-digit",
-               year:"2-digit",
-               hour:"2-digit"
-                
-              })}</td>
+              <td>
+                {new Date(user.createdAt).toLocaleString("en-US", {
+                  day: "2-digit",
+                  month: "short",
+                  year: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </td>
+              <td>
+                {new Date(user.updatedAt).toLocaleString("en-Us", {
+                  day: "2-digit",
+                  month: "short",
+                  year: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </td>
             </tr>
           ))}
         </tbody>

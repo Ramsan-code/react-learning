@@ -2,7 +2,9 @@ import React from 'react'
 
 function PostData() {
   return (
-    <div>PostData</div>
+    <div>
+      PostData
+      </div>
   )
 }
 

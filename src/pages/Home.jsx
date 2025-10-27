@@ -3,7 +3,7 @@ import HomeCard from "../componensts/HomeCard";
 function Home() {
   return (
     <>
-      <HomeCard url="introduction" text="React intro page  show 404 error"/>
+      <HomeCard url="introduction" text="hi"/>
       <HomeCard url="jsx" />
       <HomeCard url="components" />
       <HomeCard url="props" />

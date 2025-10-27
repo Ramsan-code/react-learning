@@ -11,7 +11,9 @@ function HomeCard({ url, text }) {
             </Link>
             <p className="">This is {url} page</p>
           </div>
-          <div className="content-body">{text}</div>
+         
+          {text &&  <div className="content-body">{text}</div> }
+          
         </div>
       </div>
     </>

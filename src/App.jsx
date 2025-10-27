@@ -6,11 +6,11 @@ import { Route, Routes } from "react-router-dom";
 import Props from "./pages/Props";
 import Components from "./pages/Components";
 import JSX from "./pages/JSX";
-// import ReactIntro from "./pages/ReactIntro";
 import NotFound from "./pages/NotFound";
 import Hooks from "./pages/Hooks";
 import Forms from "./pages/Forms";
 import Fetch from "./pages/Fetch";
+import ReactInto from "./pages/ReactInto";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <div className="m-6">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/react-intro" element={<ReactIntro />} /> */}
+          <Route path="/introduction" element={<ReactInto />} />
           <Route path="/jsx" element={<JSX />} />
           <Route path="/components" element={<Components />} />
           <Route path="/props" element={<Props />} />

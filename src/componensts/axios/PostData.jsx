@@ -41,8 +41,9 @@ function PostData() {
 
   return (
     <>
+    <div className="content-container">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="name"> name:</label>
+        <label htmlFor="name"> Name:</label>
         <br />
         <input
           type="text"
@@ -51,6 +52,7 @@ function PostData() {
           value={formData.name}
           onChange={handleChange}
         />
+        <br />
         <br />
         <label htmlFor="email">Email</label>
         <br />
@@ -63,8 +65,9 @@ function PostData() {
         />
         <br />
         <br />
-        <input type="submit" value="send" />
+        <input type="submit" value="send" id="button" />
       </form>
+      </div>
     </>
   );
 }

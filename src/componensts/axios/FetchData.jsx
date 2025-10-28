@@ -18,7 +18,8 @@ function FetchData() {
   const getUsers = async () => {
     try {
       const response = await axios.get(
-        "https://express-mongo-connection-sigma.vercel.app/api/users",formData
+        "https://express-mongo-connection-sigma.vercel.app/api/users",
+        formData
       );
       const userData = response.data.users;
       console.log(userData);
@@ -46,7 +47,7 @@ function FetchData() {
   return (
     <>
       <div className="content-container">
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
           <br />
           <input
@@ -69,7 +70,7 @@ function FetchData() {
           <br />
           <br />
           <input type="submit" value="send" />
-        </form>
+        </form> */}
 
         <div className="content-container">
           <h1>FetchData</h1>

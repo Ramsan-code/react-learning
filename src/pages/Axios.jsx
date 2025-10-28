@@ -7,8 +7,8 @@ function Axios() {
     <>
       <div>
         <h1>Axios</h1>
+        <PostData />
         <FetchData />
-        {/* <PostData /> */}
       </div>
     </>
   );

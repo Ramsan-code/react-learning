@@ -7,9 +7,9 @@ function Fetch() {
   return (
 
 <>
-{/* <JsonPlaceholder /> */}
+<JsonPlaceholder />
 {/* <LocalApi /> */}
-<ApiCall />
+{/* <ApiCall /> */}
 </>
 )
 }

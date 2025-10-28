@@ -26,6 +26,7 @@ function StudentForm() {
 
   return (
     <>
+    <div className="content-container">
       <form onSubmit={handleSubmit}>
         <label for="name"> name:</label>
         <br />
@@ -50,6 +51,7 @@ function StudentForm() {
         <br />
         <input type="submit" value="send" />
       </form>
+      </div>
     </>
   );
 }

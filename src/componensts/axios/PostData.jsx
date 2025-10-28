@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function PostData() {
   return (
-    <div>
-      PostData
-      </div>
-  )
+    <>
+      <div>PostData</div>
+    </>
+  );
 }
 
-export default PostData
+export default PostData;

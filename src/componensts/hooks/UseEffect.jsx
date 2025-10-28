@@ -16,6 +16,7 @@ function UseEffect() {
   }
   return (
     <>
+    <div className="content-container">
     <div>
       <h2>Age: {age}</h2>
       <button  onClick={increaseAge}>
@@ -35,6 +36,7 @@ function UseEffect() {
       <input type="text" name="" id="" value={age}/>
 
       <hr />
+    </div>
     </div>
     </>
   );

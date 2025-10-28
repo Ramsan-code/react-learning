@@ -15,8 +15,8 @@ function JsonPlaceholder() {
   };
   return (
     <>
-      <div>
-        <table border={1} cellPadding={0} cellSpacing={0}>
+      <div className="content-container">
+        <table border={2} cellPadding={10} cellSpacing={0}>
           <thead>
             <tr>
               <th>ID</th>
